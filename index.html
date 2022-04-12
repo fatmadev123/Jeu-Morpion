@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon morpion">
+    <meta name="author" content="Alain ORLUK - ID Formation">
+    <meta name="keywords" content="HTML, CSS, SVG, JS">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/main.js" defer></script>
+    <title>Morpion</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Bienvenue sur mon jeu du Morpion
+        </h1>
+    </header>
+    <div class="svg-element">
+    </div>
+    <main>
+        <h2>REGLES</h2>
+        <section>
+                Chaque joueur va à tour de rôle cliquer sur une case pour tenter d'aligner ses 3 symboles sur une ligne, une colonne ou une diagonale.
+        </section>
+        <table id="plateau">
+            <caption>Maintenant, jouons !</caption>
+            <thead id="table_header">
+                <tr>
+                    <th colspan="3">Le Morpion</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <tr>
+                    <td id="case1"></td>
+                    <td id="case2"></td>
+                    <td id="case3"></td>
+                </tr>
+                <tr>
+                    <td id="case4"></td>
+                    <td id="case5"></td>
+                    <td id="case6"></td>
+                </tr>
+                <tr>
+                    <td id="case7"></td>
+                    <td id="case8"></td>
+                    <td id="case9"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="gagnant">A GAGNE !</div>
+        <p><button id="replay">REJOUER</button></p>
+    </main>
+    <footer>
+        ©Copyright ID-Formation 2022
+    </footer>
+</body>
+</html>

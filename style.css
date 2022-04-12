@@ -1,0 +1,80 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    margin: 1rem auto 3rem auto;
+}
+main {
+    width: 40%;
+}
+section {
+    margin: 2rem auto 4rem auto;
+}
+table {
+    width: 50%;
+    margin: auto;
+}
+svg {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+svg circle {
+    stroke-dasharray: 232;
+    stroke-dashoffset: 232;
+    animation: dash .5s linear forwards;
+}
+svg path {
+    stroke-dasharray: 232;
+    stroke-dashoffset: 232;
+    animation: dash .5s linear forwards;
+}
+#table_header {
+    color: white;
+    background-color: lightgreen;
+}
+#table_header th {
+    padding: 1rem;
+    border: 1px solid darkgreen;
+}
+#table_body td {
+    border: 1px solid black;
+    width: 8rem;
+    height: 6rem;
+}
+.gagnant {
+    display: inline;
+    visibility: hidden;
+    margin: 1rem auto;
+    text-transform:uppercase;
+    font-size: x-large;
+}
+span {
+    text-transform: uppercase;
+}
+#replay {
+    visibility: hidden;
+    width: fit-content;
+    padding: .5rem;
+    margin: 2rem auto;
+}
+footer {
+    margin: 3rem auto;
+    font-size: 2rem;
+    font-weight: 800;
+}
